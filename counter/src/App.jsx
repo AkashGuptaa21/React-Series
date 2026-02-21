@@ -10,7 +10,10 @@ function App() {
   // let counter =5  //update ho skta hai , but UI me updation nhi dikhega iska 
 
   const addValue = () => {
-    setCounter(counter+1)
+     setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1 )
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
   }
 
   const removeValue = ()=>{
