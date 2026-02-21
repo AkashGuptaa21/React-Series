@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
 
-  let [counter,setCounter] =useState(5)
+  const [counter,setCounter] =useState(5)
   
   // let counter =5  //update ho skta hai , but UI me updation nhi dikhega iska 
 
