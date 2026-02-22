@@ -29,7 +29,7 @@ function App() {
 
     setPassword(pass)
 
-  }, [length, numberAllowed, charAllowed, setPassword])  //password denge , then infinite run bcz trying to optimize 
+  }, [length, numberAllowed, charAllowed, setPassword])  //if password denge , then infinite run bcz trying to optimize 
 
 
 
