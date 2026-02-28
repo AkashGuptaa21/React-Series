@@ -1,4 +1,6 @@
-import { useEffect,useState } from "react";
+//custom hook
+
+import { useEffect, useState } from "react"
 
 function useCurrencyInfo(currency){
 
