@@ -87,7 +87,7 @@ export default function Header() {
                             </li>                           
                         
                         </ul>
-                    </div>
+                    </div> 
                 </div>
             </nav>
         </header>
