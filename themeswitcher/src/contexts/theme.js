@@ -1,8 +1,8 @@
 import { createContext, useContext } from "react";
 
-export const ThemeContext = createContext({  //if someone uses this context without a Provider, this will be the default value.
-    themeMode: "light",
-    darkTheme: () => {},
+export const ThemeContext = createContext({  //if someone uses this context without a Provider, this will be the default object value.
+    themeMode: "light",   //variable
+    darkTheme: () => {},   //method
     lightTheme: () => {},
 })
 
@@ -10,4 +10,4 @@ export const ThemeProvider = ThemeContext.Provider  //same as <ThemeContext.Prov
 
 export default function useTheme(){  //custom hook
     return useContext(ThemeContext)
-} 
+}    
