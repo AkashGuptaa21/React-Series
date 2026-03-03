@@ -6,7 +6,7 @@ function Login(){
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState("")
     
-    const {setUser} = useContext(UserContext) //const { setUser }  just destructuring  //useContext(UserContext) accesses global data stored inside UserContext.It returns whatever value  Provider is giving.
+    const {setUser} = useContext(UserContext) //{ setUser } : just destructuring  //useContext(UserContext) accesses global data stored inside UserContext.It returns whatever value  Provider is giving.
 
     const handleSubmit=(e)=>{
          e.preventDefault()
@@ -23,7 +23,7 @@ function Login(){
            onChange={(e)=>setUsername(e.target.value)}
            placeholder="username" />
           
-          {"       "}
+          {"       "}  //for gap 
 
            <input type="text" 
            value={password}
