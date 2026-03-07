@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import { useTodo } from '../contexts/TodoContext';
 
-function TodoItem({ todo }) {  //destructure
+function TodoItem({ todo }) {  //destructuring   //Here todo is a variable, but its value is an object.
     
   const [isTodoEditable, setIsTodoEditable] = useState(false)
   
-  const [todoMsg, setTodoMsg] = useState(todo.todo)
+  const [todoMsg, setTodoMsg] = useState(todo.todo)   //todo.todo → string message
   
   const {updateTodo, deleteTodo, toggleComplete} = useTodo()  //hook
     
   const editTodo = () => {
-    updateTodo(todo.id, {...todo, todo: todoMsg})
+    updateTodo(todo.id, {...todo, todo: todoMsg})  //todo: todoMsg : overwritting 
     setIsTodoEditable(false)
   }
 

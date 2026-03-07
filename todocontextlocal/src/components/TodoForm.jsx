@@ -11,9 +11,9 @@ function TodoForm() {
 
         if(!todo) return 
 
-        addTodo({todo , completed: false})
+        addTodo({todo:todo , completed: false})
         
-        setTodo("")
+        setTodo("")  //making todo empty again 
     }
     return (
         <form onSubmit={add} className="flex">

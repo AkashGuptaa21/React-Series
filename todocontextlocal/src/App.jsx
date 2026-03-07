@@ -9,7 +9,7 @@ function App() {
   const [todos, setTodos] = useState([])   //todos : array of todo
 
 
-  const addTodo = (todo) =>{
+  const addTodo = (todo) =>{   //todo : object
     setTodos((prev)=> [{id:Date.now(),...todo} , ...prev ])   //prev : previous todos array  // ... spread 
   }
 
